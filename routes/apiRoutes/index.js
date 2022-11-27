@@ -3,7 +3,7 @@ const { createNewNote, updateDb } = require("../../lib/notes");
 const { v4: uuidv4 } = require("uuid");
 const notes = require("../../db/db.json");
 
-//retrieve notes in JSON formata
+//retrieve notes in JSON format
 router.get("/notes", (req, res) => {
   let results = notes;
   res.json(results);
